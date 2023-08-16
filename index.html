@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title>Cadastra-se</title>    
+
+    <!-- | -- Require_Meta_Tags -- | -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- | -- Import_Icons -- | -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- | -- Style_Sheets -- | -->
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./media.css">
+
+    <!-- | -- Scripts -- | -->
+    <script src="./app.js" defer></script>
+    <script src="./controls.js" defer></script>
+
+</head>
+<body>
+    <!-- | -- Components -- | -->
+    <main class="container__main">
+        <section class="container__cards">
+            <div class="contaniner__Content container1">
+                <header class="header__container1">
+                    <br><br>
+                    <i class='bx bxs-shopping-bags'></i>
+                    <h1 class="titleContainer1">MinMaxCode - <span class="firstLetter">S</span>hop</h1><br>
+                    <p class="descriptionTite__Container1">Take advantage of new offers every day,<br> so as not to weigh on your pocket.</p>
+                </header>
+                <footer class="footer__container1">
+                    <p class="descriptionFooter__Container1">
+                        <span class="mediaStyle">Veja como usamos seus dados </span><a href="#">Politica de uso</a>
+                    </p>
+                </footer>
+            </div>
+            <div class="contaniner__Content container2">
+                <form id="containerForm" class="hidden show">
+                    <h1 class="titleForm">Create an Account</h1>
+                    <input type="email" placeholder="Email" id="inputEmail" class="inputsStyle" name="email" title="Digite seu email">
+                    <input type="text" placeholder="FullName" id="inputFullName" class="inputsStyle" name="fullName" title="Digite seu nome completo">
+                    <div class="inputPasswords">
+                        <input type="password" placeholder="Password" id="inputPass" class="inputsStyle inputPass" name="password" title="Digite sua senha">
+                        <i id="hiddenAndShow1" class="bi bi-eye-fill"></i>
+                    </div>
+                    <div class="inputPasswords">
+                        <input type="password" placeholder="Repeat Password" id="inputRP" class="inputsStyle inputPass" name="passAgain" title="Repita sua senha">
+                        <i id="hiddenAndShow2" class="bi bi-eye-fill"></i>
+                    </div>
+                    <button type="submit" id="buttonNext">
+                        Next
+                        <i class='bx bx-right-arrow-alt icon'></i>
+                    </button>
+                </form>
+                <form id="containerForm2" class="hidden">
+                    <input type="date" id="inputDataDeNascimento" class="inputsStyle" name="data_de_nascimento" title="Selecione sua data de nascimento">
+                    <input type="number" placeholder="Cpf ex.00000000000" id="inputCpf" class="inputsStyle" name="Cpf" title="Digite seu CPF">
+                    <input type="number" placeholder="Cep" id="inputCep" class="inputsStyle" name="Cep" title="Digite seu Cep">
+                    <input type="text" placeholder="Cidade" id="inputCidade" class="inputsStyle" name="Cidade" title="Digite sua cidade">
+                    <input type="text" placeholder="Logradouro" id="inputRua" class="inputsStyle" name="Rua" title="Digite sua rua">
+                    <input type="text" placeholder="Número/complemento (Opcional)" id="inputNum" class="inputsStyle" name="numero" title="Digite número de sua residência">
+                    <button type="submit" id="buttonNext2">
+                        Register
+                        <i class='bx bx-right-arrow-alt icon'></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

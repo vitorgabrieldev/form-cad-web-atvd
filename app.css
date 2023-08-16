@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    font-family: 'K2D', sans-serif;
+}
+.container__main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container__cards {
+    background: rgb(238, 237, 237);
+    box-shadow: 5px 5px 12px #888;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contaniner__Content {
+    width: 50%;
+    height: 100%;
+}
+.container1 {
+    background: rgb(240, 240, 240);
+    border-right: 1px solid rgba(205, 203, 203, 0.56);
+}
+.container2 {
+    background: linear-gradient(90deg, rgb(240, 240, 240),#c5c5c5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__container1 {
+    text-align: center;
+}
+.header__container1 > i {
+    font-size: 7rem;
+    color: #707070;
+    user-select: none;
+}
+.titleContainer1 {
+    font-size: 3rem;
+}
+.titleContainer1::first-letter {
+    font-size: 4rem;
+    color: #fe74b2;
+}
+.firstLetter {
+    font-size: 4rem;
+    color: #fe74b2;
+}
+.descriptionTite__Container1 {
+    font-size: 1.7rem;
+    color: rgb(126, 126, 126);
+    user-select: none;
+}
+.footer__container1 {
+    position: absolute;
+    bottom: 1.2rem;
+    width: 45%;
+    text-align: center;
+}
+.descriptionFooter__Container1 {
+    user-select: none;
+    font-size: 1.5rem;
+}
+.descriptionFooter__Container1 > a {
+    color: rgb(105, 104, 104);
+}
+
+/* -- | -- Form Style -- | -- */
+#containerForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    place-items: center;
+}
+#containerForm2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    place-items: center;
+}
+.inputsStyle {
+    width: 100%;
+    border: 1px solid rgb(144, 143, 143);
+    background: transparent;
+    outline: none;
+    padding: .5rem 2rem;
+    font-size: 1.6rem;
+}
+#buttonNext,
+#buttonNext2 {
+    background: linear-gradient(45deg, #fe74b2, #f89ac4, #fe74b2);
+    border: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: .5rem 4rem;
+    color: #fefefe;
+    transition: .11s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#buttonNext:hover,
+#buttonNext2:hover {
+    transform: scale(.98);
+    padding: .5rem 6rem;
+    background: #000;
+    color: #fefefe;
+}
+.icon {
+    display: none;
+}
+#buttonNext:hover > .icon,
+#buttonNext:hover > .icon {
+    display: flex;
+}
+.titleForm {
+    font-size: 3rem;
+    color: rgb(133, 129, 129);
+}
+.titleForm::first-letter {
+    font-size: 4rem;
+    color: #fe74b2;
+}
+.inputPasswords {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 2rem);
+    border: 1px solid rgb(144, 143, 143);
+    padding-right: 2rem;
+}
+.inputPasswords > i {
+    font-size: 1.5rem;
+    color: #464646;
+    cursor: pointer;
+    transition: .33s;
+}
+.inputPass {
+    width: 70%;
+    border: none;
+}
+.inputPasswords > i:hover {
+    transform: scale(1.1);
+}
+.hidden {
+    display: none !important;
+}
+.show {
+    display: grid !important;
+}
