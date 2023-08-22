@@ -18,6 +18,23 @@
 | Validar dados      | Pressionar botões para seguir |
 | Se cadastrar       | Preencher todos os dados corretamente |
 
+#
+
+**Primeira versão criada e desenvolvida para atividade em sala de aula.**
+
+- 👍🏼 -> Terminado
+- 👎🏼 -> Não terminado
+
+| Acão | Estado |
+| ---- | --------- |
+| Preencher os dados | 👍🏼 (YES) |
+| Validar os dados | 👍🏼 (YES) |
+| Inserir no sistema | 👎🏼 (NO) |
+| Verificar CPF e CEP | 👍🏼 (YES) |
+| Trocar tema | 👎🏼 (NO) |
+| Trocar idioma | 👎🏼 (NO) |
+| 22/08/2023 |
+
 **Contribuidores:**
 - [@ovitorgabrieldev](https://www.github.com/vitorgabrieldev)
 
