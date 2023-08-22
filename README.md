@@ -35,8 +35,5 @@
 | Trocar idioma | 👎🏼 (NO) |
 | 22/08/2023 |
 
-**Contribuidores:**
-- [@ovitorgabrieldev](https://www.github.com/vitorgabrieldev)
-
 ![NextStepsConferenceConferenceGIF](https://github.com/vitorgabrieldev/form-cad-web-atvd/assets/106203763/8c271101-8226-4555-a823-7b68df166934)
 
