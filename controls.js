@@ -22,3 +22,4 @@ document.querySelector('#hiddenAndShow2').addEventListener('click', () => {
         document.querySelector('#inputRP').type = "password";
     };
 });
+

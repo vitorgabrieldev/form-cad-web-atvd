@@ -68,29 +68,23 @@ document.querySelector('#containerForm2').addEventListener('submit', (event) => 
 function requestDatas2() {
     let data = responseData2();
     
-    let verifyDate = globalThis.verifyDate(data.date);
     let verifyCpf = globalThis.verifyCpf(data.cpf);
     let verifyCep = globalThis.verifyCep(data.cep);
+    
 
-    if( verifyDate == true && verifyCpf == true && verifyCep == true && data.cidade && data.logradouro) {
+    if( verifyCpf == true && verifyCep == true) {
         alert('Você foi cadastro com sucesso!');
     };
 };
 
 const responseData2 = () => {
     let objectData = {
-        'date': document.querySelector('#inputDataDeNascimento').value,
         'cpf': document.querySelector('#inputCpf').value,
         'cep': document.querySelector('#inputCep').value,
         'cidade': document.querySelector('#inputCidade').value,
         'logradouro': document.querySelector('#inputRua').value,
     };
     return objectData;
-};
-
-
-function verifyDate(date) {
-    if (parseInt(date.substr(0,4)) + 18 <= new Date().getFullYear()) { return true; } else alert('É necessário ter 18 anos!'); 
 };
 
 function verifyCpf(strCPF) {
@@ -114,6 +108,8 @@ function verifyCep(cep) {
     let regex = /[0-9]/;
     if (regex.test(cep) == true) {
         if (cep.length == 8) {
+            searchResults(cep);
+
             return true;
         } else {
             alert('Digite um cep válido!'); 
@@ -121,4 +117,26 @@ function verifyCep(cep) {
     } else {
         alert('Digite um cep válido!');
     };
+};
+
+
+function searchResults(reqCity) {
+    fetch(`viacep.com.br/ws/01001000/json/`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`http error: status ${response.status}`)
+            }
+            return response.json();
+        })
+        .catch(error => {
+            alert(error.message);
+        })
+        .then(response => {
+            displayResults(response, reqCity);
+        });
+};
+
+const displayResults = (data, city) => {
+    console.log(data)
+    console.log(city)
 };

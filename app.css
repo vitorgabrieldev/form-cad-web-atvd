@@ -68,7 +68,7 @@ body, html {
 }
 .descriptionFooter__Container1 {
     user-select: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .descriptionFooter__Container1 > a {
     color: rgb(105, 104, 104);
@@ -157,4 +157,9 @@ body, html {
 }
 .show {
     display: grid !important;
+}
+
+.inputsStyle:disabled {
+    background: rgba(0, 0, 0, 0.089);
+    cursor: no-drop;
 }
