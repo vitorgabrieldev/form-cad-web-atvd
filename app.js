@@ -62,30 +62,22 @@ function validName(name) {
 
 document.querySelector('#containerForm2').addEventListener('submit', (event) => {
     event.preventDefault();
-    requestDatas2();
+    requestDatas2(document.querySelector('#inputCep').value, document.querySelector('#inputCpf').value);
 });
 
-function requestDatas2() {
-    let data = responseData2();
-    
-    let verifyCpf = globalThis.verifyCpf(data.cpf);
-    let verifyCep = globalThis.verifyCep(data.cep);
-    
+function focusDisable() {
+    verifyCep(document.querySelector('#inputCep').value);
+};
 
-    if( verifyCpf == true && verifyCep == true) {
+function requestDatas2(cep, cpf) {
+    
+    let verifyCpf = globalThis.verifyCpf(cpf);    
+
+    if(verifyCpf == true) {
         alert('Você foi cadastro com sucesso!');
     };
 };
 
-const responseData2 = () => {
-    let objectData = {
-        'cpf': document.querySelector('#inputCpf').value,
-        'cep': document.querySelector('#inputCep').value,
-        'cidade': document.querySelector('#inputCidade').value,
-        'logradouro': document.querySelector('#inputRua').value,
-    };
-    return objectData;
-};
 
 function verifyCpf(strCPF) {
     var Soma;
@@ -109,8 +101,6 @@ function verifyCep(cep) {
     if (regex.test(cep) == true) {
         if (cep.length == 8) {
             searchResults(cep);
-
-            return true;
         } else {
             alert('Digite um cep válido!'); 
         };
@@ -121,7 +111,7 @@ function verifyCep(cep) {
 
 
 function searchResults(reqCity) {
-    fetch(`viacep.com.br/ws/01001000/json/`)
+    fetch(`https://viacep.com.br/ws/${reqCity}/json/`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`http error: status ${response.status}`)
@@ -138,5 +128,9 @@ function searchResults(reqCity) {
 
 const displayResults = (data, city) => {
     console.log(data)
-    console.log(city)
+
+    document.getElementById("inputEstado").value = data.uf
+    document.getElementById("inputCidade").value = data.localidade
+    document.getElementById("inputRua").value = data.logradouro
+
 };
