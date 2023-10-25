@@ -2,6 +2,15 @@
 
 **🏫Formulário de cadastro para atividade em sala no colégio Marista Ir. Acácio.**
 
+| **E-commerce avaliados:** |
+| ------------------------- |
+| [Amazon](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiax7O99I-CAxVrksIIHZYXBSYYABAAGgJqZg&gclid=CjwKCAjw1t2pBhAFEiwA_-A-NM2CNK3dp_DvBldfWMB-oS-Rdg5yY1ROqllGiDj4VlcNqRR3oXwdxxoC0DsQAvD_BwE&ohost=www.google.com&cid=CAESVuD2ZK1HkA0hGDl5KjiMX3qRXo0SoeOLvXp0AgssqCLeC25_FjDVlskXx7IwHmm5L0JhF04bDfxnHQu12FNo1FDjkLDnf2mokYkdhQpJHV_usKXWefo4&sig=AOD64_2Je9tO4Y_OVuKMnt_YAUXUicbFZw&q&adurl&ved=2ahUKEwj8-qa99I-CAxXnLLkGHWnvBmgQ0Qx6BAgGEAE) |
+| [Zara](https://www.zara.com/br/)   |
+| [Walmart](https://www.walmart.com/)  |
+| [Submarino](https://www.submarino.com.br/) |
+| [Sephora](https://www.sephora.com.br/) |
+
+
 | 📔Tipo           | Linguagem       |
 | ----------------- | --------------- |
 | 🛠️Marcação          | **Html**        |
